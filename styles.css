@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:ital,opsz,wght@1,9..144,700&family=Hanken+Grotesk:wght@500;600;700&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.menu {
+    /* display: none; */
+    justify-content: space-between;
+    align-items: center;
+    inset: 0 0 0 50%;
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dropdown {
+    background-color: white;
+    height: 100%;
+}
+
+ul {
+    order: 3;
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 7rem;
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+    padding-top: 30px;
+}
+
+a:hover{
+    color: black;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon-menu {
+    max-width: 40px;
+}
+
+.icon-menu-close {
+    max-width: 30px;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+}
+
+.open-icon {
+    max-width: 40px;
+    border: none;
+}
+
+body {
+    margin: 1rem;
+}
+
+main img {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.Read{
+    width: 50%;
+    height: 50px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-size: 15px;
+}
+
+button:hover{
+    /* background-color: hsl(240, 100%, 5%); */
+    cursor: pointer;
+}
+
+.Read:hover{
+    background-color: hsl(240, 100%, 5%);
+    /* cursor: pointer; */
+}
+
+.new {
+    background-color: hsl(240, 100%, 5%);
+    padding: 2rem;
+    color: hsl(36, 100%, 99%);
+    margin-top: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.new p {
+    color: hsl(233, 8%, 79%);
+}
+.new hr {
+    border: 0.1px solid hsl(236, 13%, 42%);
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.new h1 {
+    color:  hsl(35, 77%, 62%);
+    /* font-family: 'Fraunces', serif; */
+}
+
+.new h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.new h2:hover {
+    color:  hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.item img {
+    max-width: 150px;
+    width: 100%;
+    /* height: 100; */
+    object-fit: cover;
+}
+
+.item h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(134, 132, 132);
+    margin-top: 0.5rem;
+}
+
+.item p{
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 920px) {
+    body {
+        margin: 4rem;
+    }
+    .container {
+        display: flex;
+        gap: 2rem;
+    }
+    .container1 {
+        width: 65%;
+    }
+    .new {
+        width: 30%;
+        margin-top: 0;
+    }
+    .items {
+        display: flex;
+    }
+    .container2 {
+        margin-top: 20px;
+        display: flex;
+    }
+    .Read {
+        height: 40px;
+        margin-top: 50px;
+    }
+    .menu {
+        display: unset;
+        justify-content: space-between;
+        align-items: center;
+        inset: unset;
+        position: unset;
+    }
+    ul li a{
+        padding-left: 15px;
+        margin-right: 2.5rem;
+    }
+    ul {
+        order: unset;
+        list-style: none;
+        text-align: unset;
+        padding-left: 0px;
+        padding-top: 0px;
+        display: flex;
+    }
+    .close-icon,.open-icon {
+        display: none;
+    }
+    .header {
+        display: flex;
+    }
+}

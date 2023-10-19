@@ -142,13 +142,19 @@ button:hover{
     font-size: 3rem;
     font-weight: 900;
     color: rgb(134, 132, 132);
-    margin-top: 0.5rem;
 }
 
 .item p{
     margin-bottom: 0px;
 }
-
+.overlay {
+    position: relative;
+}
+.overlay p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 @media screen and (min-width: 920px) {
     body {
         margin: 4rem;
@@ -174,7 +180,7 @@ button:hover{
     }
     .item img {
         max-width: 150px;
-        max-height: 180px;
+        max-height: 185px;
         width: 100%;
         height: 100%;
         object-fit: cover;
